@@ -9,9 +9,16 @@ from torchvision import transforms, models
 from torchvision.datasets import ImageFolder
 from torchsummary import summary
 
+# parameters
 epoches = 5
-
+BATCH_SIZE = 32
+pretrained = False
+train_input_path = "./testing_train"
+test_input_path = "./test"
+valid_input_path = "'./valid'"
 outputs = Path('./outputs')
+
+
 if not outputs.is_dir():
     outputs.mkdir()
 
@@ -36,19 +43,19 @@ valid_trans = train_trans
 
 # read file
 
-train_folder = ImageFolder(r'./testing_train', transform=train_trans, )
-test_folder = ImageFolder(r'./test', transform=valid_trans, )
+train_folder = ImageFolder(train_input_path, transform=train_trans, )
+test_folder = ImageFolder(test_input_path, transform=valid_trans, )
 
 # print(len(train_folder.classes))
 
-BATCH_SIZE = 32
+
 train_loader = torch.utils.data.DataLoader(train_folder, shuffle=True, batch_size=BATCH_SIZE)
 test_loader = torch.utils.data.DataLoader(test_folder, shuffle=False, batch_size=BATCH_SIZE)
 
 
 ###########################################
 
-vgg = models.vgg19(pretrained=False).to(device)
+vgg = models.vgg19(pretrained=pretrained).to(device)
 vgg.classifier[6] = nn.Linear(4096, 100).to(device)
 
 # Freezing all layers except last 15
@@ -146,7 +153,7 @@ def save_model(epochs, model, optimizer, criterion, name='model', descr=''):
 
 save_model(epoches, vgg, opt, loss_fn, 'vgg19_test', descr='15 unfrozen layers; 1e-4 lr')
 
-valid_folder = ImageFolder('./valid', transform=valid_trans, )
+valid_folder = ImageFolder(valid_input_path, transform=valid_trans, )
 valid_loader = torch.utils.data.DataLoader(valid_folder, shuffle=False, batch_size=BATCH_SIZE)
 valid_loss, valid_acc = validate(vgg, valid_loader, loss_fn)
 print(valid_loss, valid_acc)
