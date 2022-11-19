@@ -13,7 +13,7 @@ from torchsummary import summary
 # parameters
 epoches = 20
 BATCH_SIZE = 32
-pretrained = True
+pretrained = False
 train_input_path = "./testing_train"
 test_input_path = "./test"
 valid_input_path = "./valid"
@@ -46,12 +46,13 @@ def save_model(epochs, model, optimizer, criterion, output_Path='./outputs/model
 
 train_trans = transforms.Compose([
     transforms.Resize((224, 224)),
-    transforms.RandomHorizontalFlip(p=0.5),
-    transforms.RandomVerticalFlip(p=0.5),
-    transforms.GaussianBlur(kernel_size=(5, 9), sigma=(0.1, 5)),
-    transforms.RandomRotation(degrees=(30, 70)),
+    # transforms.RandomHorizontalFlip(p=0.5),
+    # transforms.RandomVerticalFlip(p=0.5),
+    # transforms.GaussianBlur(kernel_size=(5, 9), sigma=(0.1, 5)),
+    # transforms.RandomRotation(degrees=(30, 70)),
 
-    transforms.RandomResizedCrop(256),
+    # transforms.RandomResizedCrop(256),
+
     transforms.ToTensor(),
     transforms.Normalize(
         mean=[0.5, 0.5, 0.5],
@@ -73,7 +74,7 @@ test_loader = torch.utils.data.DataLoader(test_folder, shuffle=False, batch_size
 
 ###########################################
 
-vgg = models.vgg19(pretrained=True).to(device)
+vgg = models.vgg19(pretrained=pretrained).to(device)
 vgg.classifier[6] = nn.Linear(4096, 100).to(device)
 
 # Freezing all layers except last 15
