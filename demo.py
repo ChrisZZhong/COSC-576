@@ -44,7 +44,7 @@ def save_model(epochs, model, optimizer, criterion, output_Path='./outputs/model
 
 # image augment
 
-trans = transforms.Compose([
+train_trans = transforms.Compose([
     transforms.Resize((224, 224)),
     transforms.RandomHorizontalFlip(p=0.5),
     transforms.RandomVerticalFlip(p=0.5),
