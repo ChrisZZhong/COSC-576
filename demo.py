@@ -51,7 +51,12 @@ train_trans = transforms.Compose([
     transforms.GaussianBlur(kernel_size=(5, 9), sigma=(0.1, 5)),
     transforms.RandomRotation(degrees=(30, 70)),
 
-    transforms.RandomResizedCrop(256)
+    transforms.RandomResizedCrop(256),
+    transforms.ToTensor(),
+    transforms.Normalize(
+        mean=[0.5, 0.5, 0.5],
+        std=[0.5, 0.5, 0.5]
+    )
 ])
 
 valid_trans = train_trans
