@@ -67,7 +67,7 @@ test_loader = torch.utils.data.DataLoader(test_folder, shuffle=False, batch_size
 
 ###########################################
 
-vgg = models.vgg19(pretrained=pretrained).to(device)
+vgg = models.vgg19(pretrained=True).to(device)
 vgg.classifier[6] = nn.Linear(4096, 100).to(device)
 
 # Freezing all layers except last 15
@@ -112,7 +112,7 @@ def validate(model, valid_data, loss_fn):
     return mean(valid_losses), mean(valid_accuracies)
 
 
-def train(model, train_data, valid_data, loss_fn, opt, epoches = 20):
+def train(model, train_data, valid_data, loss_fn, opt, epoches=5):
     train_losses, valid_losses = [], []
     train_accuracies, valid_accuracies = [], []
 
