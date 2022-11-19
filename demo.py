@@ -11,9 +11,9 @@ from torchvision.datasets import ImageFolder
 from torchsummary import summary
 
 # parameters
-epoches = 5
+epoches = 20
 BATCH_SIZE = 32
-pretrained = False
+pretrained = True
 train_input_path = "./testing_train"
 test_input_path = "./test"
 valid_input_path = "./valid"
