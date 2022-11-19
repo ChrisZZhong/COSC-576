@@ -3,6 +3,7 @@ from tqdm.notebook import tqdm
 from pathlib import Path
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 import torch.optim as optim
 from torchvision import transforms, models
 from torchvision.datasets import ImageFolder
@@ -46,6 +47,37 @@ test_loader = torch.utils.data.DataLoader(test_folder, shuffle=False, batch_size
 
 
 ###########################################
+
+class ConvBlock(nn.Module):
+
+    def __init__(self, in_feat, out_feat):
+        super().__init__()
+        self.conv1 = nn.Conv2d(in_feat, out_feat // 2, 3, padding=1)
+        self.conv2 = nn.Conv2d(out_feat // 2, out_feat, 3, padding=1)
+        self.pool = nn.MaxPool2d(2)
+
+    def forward(self, x):
+        x = F.relu(self.conv1(x))
+        x = self.pool(x)
+        x = F.relu(self.conv2(x))
+        return self.pool(x)
+
+
+class ConvNet(nn.Module):
+
+    def __init__(self):
+        super().__init__()
+        self.conv1 = ConvBlock(3, 128)
+        self.conv2 = ConvBlock(128, 512)
+        self.fc1 = nn.Linear(512 * 14 * 14, 128)
+        self.cl = nn.Linear(128, 100)
+
+    def forward(self, x):
+        x = F.relu(self.conv1(x))
+        x = F.relu(self.conv2(x))
+        x = F.relu(self.fc1(torch.flatten(x, 1)))
+        return self.cl(x)
+
 
 vgg = models.vgg19(pretrained=False).to(device)
 vgg.classifier[6] = nn.Linear(4096, 100).to(device)

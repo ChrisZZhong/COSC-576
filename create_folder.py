@@ -3,15 +3,14 @@ import shutil
 import random
 
 
-
 def main(path, out, num):
     files = os.listdir(path)
     count = 0
     while count <= num:
         count += 1
-        index = random.randint(0, len(files)-1)
+        index = random.randint(0, len(files) - 1)
         file = files[index]
-    # for files in os.listdir(path):
+        # for files in os.listdir(path):
         name = os.path.join(path, file)
         back_name = os.path.join(out, file)
         if os.path.isfile(name):
@@ -21,18 +20,19 @@ def main(path, out, num):
                 os.makedirs(back_name)
             main(name, back_name)
 
- 
-def mkdir(path):
- 
-	folder = os.path.exists(path)
- 
-	if not folder:                 
-		os.makedirs(path)     
- 
-	# else:
-	# 	print("There is this folder!")
 
-    # return path
+def mkdir(path):
+    folder = os.path.exists(path)
+
+    if not folder:
+        os.makedirs(path)
+
+    # else:
+
+
+# 	print("There is this folder!")
+
+# return path
 
 
 if __name__ == '__main__':
