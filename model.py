@@ -15,7 +15,7 @@ BATCH_SIZE = 32
 pretrained = False
 train_input_path = "./testing_train"
 test_input_path = "./test"
-valid_input_path = "'./valid'"
+valid_input_path = "./valid"
 outputs = Path('./outputs')
 
 
