@@ -13,7 +13,7 @@ from torchsummary import summary
 # parameters
 epoches = 20
 BATCH_SIZE = 32
-pretrained = False
+pretrained = True
 train_input_path = "./testing_train"
 test_input_path = "./test"
 valid_input_path = "./valid"
@@ -46,10 +46,10 @@ def save_model(epochs, model, optimizer, criterion, output_Path='./outputs/model
 
 train_trans = transforms.Compose([
     transforms.Resize((224, 224)),
-    # transforms.RandomHorizontalFlip(p=0.5),
-    # transforms.RandomVerticalFlip(p=0.5),
-    # transforms.GaussianBlur(kernel_size=(5, 9), sigma=(0.1, 5)),
-    # transforms.RandomRotation(degrees=(30, 70)),
+    transforms.RandomHorizontalFlip(p=0.5),
+    transforms.RandomVerticalFlip(p=0.5),
+    transforms.GaussianBlur(kernel_size=(5, 9), sigma=(0.1, 5)),
+    transforms.RandomRotation(degrees=(30, 70)),
 
     # transforms.RandomResizedCrop(256),
 
@@ -60,7 +60,14 @@ train_trans = transforms.Compose([
     )
 ])
 
-valid_trans = train_trans
+valid_trans = transforms.Compose([
+    transforms.Resize((224, 224)),
+    transforms.ToTensor(),
+    transforms.Normalize(
+        mean=[0.5, 0.5, 0.5],
+        std=[0.5, 0.5, 0.5]
+    )
+])
 # read file
 
 train_folder = ImageFolder(train_input_path, transform=train_trans, )
