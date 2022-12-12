@@ -11,9 +11,9 @@ from torchvision.datasets import ImageFolder
 from torchsummary import summary
 
 # parameters
-epoches = 20
+epoches = 17
 BATCH_SIZE = 32
-pretrained = True
+pretrained = False
 train_input_path = "./testing_train"
 test_input_path = "./test"
 valid_input_path = "./valid"
@@ -41,25 +41,6 @@ def save_model(epochs, model, optimizer, criterion, output_Path='./outputs/model
         'descr': descr,
     }, output_Path)
 
-
-# image augment
-
-train_trans = transforms.Compose([
-    transforms.Resize((224, 224)),
-    transforms.RandomHorizontalFlip(p=0.5),
-    transforms.RandomVerticalFlip(p=0.5),
-    transforms.GaussianBlur(kernel_size=(5, 9), sigma=(0.1, 5)),
-    transforms.RandomRotation(degrees=(30, 70)),
-
-    # transforms.RandomResizedCrop(256),
-
-    transforms.ToTensor(),
-    transforms.Normalize(
-        mean=[0.5, 0.5, 0.5],
-        std=[0.5, 0.5, 0.5]
-    )
-])
-
 valid_trans = transforms.Compose([
     transforms.Resize((224, 224)),
     transforms.ToTensor(),
@@ -68,9 +49,95 @@ valid_trans = transforms.Compose([
         std=[0.5, 0.5, 0.5]
     )
 ])
-# read file
 
-train_folder = ImageFolder(train_input_path, transform=train_trans, )
+# image augment
+# train_trans = transforms.Compose([
+#     transforms.Resize((224, 224)),
+
+#     transforms.RandomHorizontalFlip(p=0.5),
+#     transforms.RandomVerticalFlip(p=0.5),
+#     transforms.GaussianBlur(kernel_size=(5, 9), sigma=(0.1, 5)),
+#     transforms.RandomRotation(degrees=(30, 70)),
+
+#     transforms.RandomResizedCrop(256),
+
+#     transforms.ToTensor(),
+#     transforms.Normalize(
+#         mean=[0.5, 0.5, 0.5],
+#         std=[0.5, 0.5, 0.5]
+#     )
+# ])
+train_trans0 = transforms.Compose([
+    transforms.Resize((224, 224)),
+    transforms.ToTensor(),
+    transforms.Normalize(
+        mean=[0.5, 0.5, 0.5],
+        std=[0.5, 0.5, 0.5]
+    )
+])
+
+train_trans1 = transforms.Compose([
+    transforms.Resize((224, 224)),
+
+    transforms.RandomHorizontalFlip(p=1),
+
+    transforms.ToTensor(),
+    transforms.Normalize(
+        mean=[0.5, 0.5, 0.5],
+        std=[0.5, 0.5, 0.5]
+    )
+])
+
+train_trans2 = transforms.Compose([
+    transforms.Resize((224, 224)),
+
+    transforms.RandomVerticalFlip(p=1),
+
+    transforms.ToTensor(),
+    transforms.Normalize(
+        mean=[0.5, 0.5, 0.5],
+        std=[0.5, 0.5, 0.5]
+    )
+])
+
+train_trans3 = transforms.Compose([
+    transforms.Resize((224, 224)),
+
+    transforms.RandomRotation(degrees=(30, 70)),
+
+    transforms.ToTensor(),
+    transforms.Normalize(
+        mean=[0.5, 0.5, 0.5],
+        std=[0.5, 0.5, 0.5]
+    )
+])
+
+
+
+train_trans4 = transforms.Compose([
+    transforms.Resize((224, 224)),
+
+    transforms.RandomCrop(224, padding=64, padding_mode='edge'),
+
+    transforms.ToTensor(),
+    transforms.Normalize(
+        mean=[0.5, 0.5, 0.5],
+        std=[0.5, 0.5, 0.5]
+    )
+])
+
+
+
+# valid_trans = train_trans
+# read file
+train_folder0 = ImageFolder(train_input_path, transform=train_trans0, )
+train_folder1 = ImageFolder(train_input_path, transform=train_trans1, )
+train_folder2 = ImageFolder(train_input_path, transform=train_trans2, )
+train_folder3 = ImageFolder(train_input_path, transform=train_trans3, )
+train_folder4 = ImageFolder(train_input_path, transform=train_trans4, )
+train_folder5 = ImageFolder(train_input_path, transform=train_trans4, )
+train_folder = train_folder0 + train_folder1 +train_folder2 + train_folder3 + train_folder4 + train_folder5
+
 test_folder = ImageFolder(test_input_path, transform=valid_trans, )
 
 # print(len(train_folder.classes))
@@ -85,7 +152,7 @@ vgg = models.vgg19(pretrained=pretrained).to(device)
 vgg.classifier[6] = nn.Linear(4096, 100).to(device)
 
 # Freezing all layers except last 15
-for param in list(vgg.parameters())[:-15]:
+for param in list(vgg.parameters())[:-8]:
     param.requires_grad = False
 
 loss_fn = nn.CrossEntropyLoss()
@@ -161,7 +228,9 @@ def train(model, train_data, valid_data, loss_fn, opt, epoches=5):
 
 
 ################################################
-
+print('lenth of train_floder0' ,len(train_folder0))
+print('lenth of train_floder' ,len(train_folder))
+print('+++++++++++++++++++++++++++++++++++++++++++++++++')
 vgg, train_losses, train_accuracies, valid_losses, valid_accuracies = train(vgg, train_loader, test_loader, loss_fn,
                                                                             opt, epoches=epoches)
 
