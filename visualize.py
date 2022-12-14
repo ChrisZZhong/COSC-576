@@ -6,6 +6,7 @@ times = text.split("freeze first")[1:]
 # epoch = 0
 epochs = [i for i in range(10)]
 for epoch in epochs:
+    print(epoch)
     X = [i for i in range(0, 19)]
     train = []
     val = []
@@ -19,8 +20,8 @@ for epoch in epochs:
 
     # eps[1].split(" ")[-1][:5]
 
-    print(train)
-    print(val)
+    # print(train)
+    print(max(val))
     #
     # X = [i for i in range(0, 19)]
 

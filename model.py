@@ -9,18 +9,16 @@ import torch.optim as optim
 from torchvision import transforms, models
 from torchvision.datasets import ImageFolder
 from torchsummary import summary
-from matplotlib import pyplot as plt
 
 # parameters
-epoches = 10
+epoches = 13
 BATCH_SIZE = 32
-pretrained = True
+pretrained = False
 train_input_path = "./train"
 test_input_path = "./test"
 valid_input_path = "./valid"
 output_path = "./outputs/vgg19_test.pth"
 outputs = Path('./outputs')
-learning_rate = 1e-4
 
 if not outputs.is_dir():
     outputs.mkdir()
@@ -79,107 +77,100 @@ train_loader = torch.utils.data.DataLoader(train_folder, shuffle=True, batch_siz
 test_loader = torch.utils.data.DataLoader(test_folder, shuffle=False, batch_size=BATCH_SIZE)
 
 ###########################################
-layers = []
-train_acc_list = []
-valid_acc_list = []
 
-for i in range(0, 38, 2):
-    print(f"freeze first {i/2} layers")
+for i in range(-7, -6):
+    print(f"except last {i}")
     vgg = models.vgg19(pretrained=pretrained).to(device)
     vgg.classifier[6] = nn.Linear(4096, 100).to(device)
 
-    print(len(list(vgg.parameters())))
+    # print(len(list(vgg.parameters())))
 
     # Freezing all layers except last 15
     for param in list(vgg.parameters())[:i]:
         param.requires_grad = False
-#
-#     loss_fn = nn.CrossEntropyLoss()
-#     opt = optim.Adam(vgg.parameters(), lr=learning_rate)
+
+    loss_fn = nn.CrossEntropyLoss()
+    opt = optim.Adam(vgg.parameters(), lr=1e-4)
     for name, value in vgg.named_parameters():
         print('name: {0},\t grad: {1}'.format(name, value.requires_grad))
-#
-#     # print(summary(vgg, (3, 224, 224)))
-#
-#     def mean(l: list):
-#         return sum(l) / len(l)
-#
-#
-#     def plot_losses_and_acc(train_losses, train_accuracies, valid_losses, valid_accuracies):
-#         fig, axes = plt.subplots(1, 2, figsize=(15, 10))
-#         axes[0].plot(train_losses, label='train_losses')
-#         axes[0].plot(valid_losses, label='valid_losses')
-#         axes[0].set_title('Losses')
-#         axes[0].legend()
-#
-#         axes[1].plot(train_accuracies, label='train_losses')
-#         axes[1].plot(valid_accuracies, label='valid_losses')
-#         axes[1].set_title('Accuracy')
-#         axes[1].legend()
-#
-#
-#     def validate(model, valid_data, loss_fn):
-#         valid_losses, valid_accuracies = [], []
-#         model.eval()
-#         with torch.no_grad():
-#             for X_batch, y_batch in tqdm(valid_data, leave=False):
-#                 X_batch, y_batch = X_batch.to(device).float(), y_batch.to(device).long()
-#                 logits = model(X_batch)
-#                 loss = loss_fn(logits, y_batch)
-#                 valid_losses.append(loss.item())
-#                 preds = torch.argmax(logits, axis=1)
-#
-#                 valid_accuracies.append(((preds == y_batch).sum() / len(preds)).item())
-#         return mean(valid_losses), mean(valid_accuracies)
-#
-#
-#     def train(model, train_data, valid_data, loss_fn, opt, epoches=5):
-#         train_losses, valid_losses = [], []
-#         train_accuracies, valid_accuracies = [], []
-#
-#         for epoch in tqdm(range(epoches)):
-#             train_loss = []
-#             train_acc = []
-#             model.train()
-#             for X_batch, y_batch in tqdm(train_data, leave=False):
-#                 opt.zero_grad()
-#
-#                 X_batch, y_batch = X_batch.to(device).float(), y_batch.to(device).long()
-#                 logits = model(X_batch)
-#                 loss = loss_fn(logits, y_batch, )
-#                 train_loss.append(loss.item())
-#
-#                 pred = torch.argmax(logits, dim=1)
-#                 train_acc.append(((pred == y_batch).sum() / len(pred)).item())
-#                 loss.backward()
-#                 opt.step()
-#
-#             valid_loss, valid_accuracy = validate(model, valid_data, loss_fn)
-#
-#             train_accuracies.append(mean(train_acc))
-#             train_losses.append(mean(train_loss))
-#             valid_losses.append(valid_loss)
-#             valid_accuracies.append(valid_accuracy)
-#
-#             print(
-#                 f'epoch: {epoch}: train_loss: {mean(train_losses)}, train_acc: {mean(train_acc)}, val_loss: {valid_loss}, val_acc: {valid_accuracy}')
-#         plot_losses_and_acc(train_losses, train_accuracies, valid_losses, valid_accuracies)
-#         return model, train_losses, train_accuracies, valid_losses, valid_accuracies
-#
-#
-#     ################################################
-#
-#     vgg, train_losses, train_accuracies, valid_losses, valid_accuracies = train(vgg, train_loader, test_loader, loss_fn,
-#                                                                                 opt, epoches=epoches)
-#
-#     # save_model(epoches, vgg, opt, loss_fn, output_path, descr=f'{19-i/2} unfrozen layers; 1e-4 lr')
-#
-#     valid_folder = ImageFolder(valid_input_path, transform=valid_trans, )
-#     valid_loader = torch.utils.data.DataLoader(valid_folder, shuffle=False, batch_size=BATCH_SIZE)
-#     valid_loss, valid_acc = validate(vgg, valid_loader, loss_fn)
-#     print(valid_loss, valid_acc)
-#     train_acc_list.append(train_accuracies)
-#     valid_acc_list.append(valid_acc)
-#     layers.append(i/2)
-# # # plt.show()
 
+    print(summary(vgg, (3, 224, 224)))
+
+    def mean(l: list):
+        return sum(l) / len(l)
+
+
+    def plot_losses_and_acc(train_losses, train_accuracies, valid_losses, valid_accuracies):
+        fig, axes = plt.subplots(1, 2, figsize=(15, 10))
+        axes[0].plot(train_losses, label='train_losses')
+        axes[0].plot(valid_losses, label='valid_losses')
+        axes[0].set_title('Losses')
+        axes[0].legend()
+
+        axes[1].plot(train_accuracies, label='train_losses')
+        axes[1].plot(valid_accuracies, label='valid_losses')
+        axes[1].set_title('Accuracy')
+        axes[1].legend()
+
+
+    def validate(model, valid_data, loss_fn):
+        valid_losses, valid_accuracies = [], []
+        model.eval()
+        with torch.no_grad():
+            for X_batch, y_batch in tqdm(valid_data, leave=False):
+                X_batch, y_batch = X_batch.to(device).float(), y_batch.to(device).long()
+                logits = model(X_batch)
+                loss = loss_fn(logits, y_batch)
+                valid_losses.append(loss.item())
+                preds = torch.argmax(logits, axis=1)
+
+                valid_accuracies.append(((preds == y_batch).sum() / len(preds)).item())
+        return mean(valid_losses), mean(valid_accuracies)
+
+
+    def train(model, train_data, valid_data, loss_fn, opt, epoches=5):
+        train_losses, valid_losses = [], []
+        train_accuracies, valid_accuracies = [], []
+
+        for epoch in tqdm(range(epoches)):
+            train_loss = []
+            train_acc = []
+            model.train()
+            for X_batch, y_batch in tqdm(train_data, leave=False):
+                opt.zero_grad()
+
+                X_batch, y_batch = X_batch.to(device).float(), y_batch.to(device).long()
+                logits = model(X_batch)
+                loss = loss_fn(logits, y_batch, )
+                train_loss.append(loss.item())
+
+                pred = torch.argmax(logits, dim=1)
+                train_acc.append(((pred == y_batch).sum() / len(pred)).item())
+                loss.backward()
+                opt.step()
+
+            valid_loss, valid_accuracy = validate(model, valid_data, loss_fn)
+
+            train_accuracies.append(mean(train_acc))
+            train_losses.append(mean(train_loss))
+            valid_losses.append(valid_loss)
+            valid_accuracies.append(valid_accuracy)
+
+            print(
+                f'epoch: {epoch}: train_loss: {mean(train_losses)}, train_acc: {mean(train_acc)}, val_loss: {valid_loss}, val_acc: {valid_accuracy}')
+        plot_losses_and_acc(train_losses, train_accuracies, valid_losses, valid_accuracies)
+        return model, train_losses, train_accuracies, valid_losses, valid_accuracies
+
+
+    ################################################
+
+    vgg, train_losses, train_accuracies, valid_losses, valid_accuracies = train(vgg, train_loader, test_loader, loss_fn,
+                                                                                opt, epoches=epoches)
+
+    save_model(epoches, vgg, opt, loss_fn, output_path, descr='15 unfrozen layers; 1e-4 lr')
+
+    valid_folder = ImageFolder(valid_input_path, transform=valid_trans, )
+    valid_loader = torch.utils.data.DataLoader(valid_folder, shuffle=False, batch_size=BATCH_SIZE)
+    valid_loss, valid_acc = validate(vgg, valid_loader, loss_fn)
+    print(valid_loss, valid_acc)
+# # plt.show()
