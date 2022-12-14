@@ -1,0 +1,688 @@
+C:\Anaconda\python.exe "C:/Users/hp/Desktop/GU-courses/2022-fall/Intro deep learning/project/group project/model.py"
+11.6
+True
+cuda
+freeze first 0.0 layers
+38
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=10.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 0: train_loss: 1.9821631109412712, train_acc: 0.5168997550312476, val_loss: 0.5985887069255114, val_acc: 0.8238281272351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 1: train_loss: 1.267428808565004, train_acc: 0.8436555735672576, val_loss: 0.31767259654589, val_acc: 0.8910156264901161
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 2: train_loss: 0.9595426481861606, train_acc: 0.9016588402699821, val_loss: 0.27870989846996963, val_acc: 0.9195312522351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 3: train_loss: 0.7819686810627486, train_acc: 0.9241195385969138, val_loss: 0.2192426934489049, val_acc: 0.9421874992549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 4: train_loss: 0.6658101901937206, train_acc: 0.9401873212826403, val_loss: 0.2161019837949425, val_acc: 0.9343749992549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 5: train_loss: 0.5858075769389745, train_acc: 0.9449341567256783, val_loss: 0.299761241680244, val_acc: 0.9187499992549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 6: train_loss: 0.5234241547662122, train_acc: 0.9568037974683544, val_loss: 0.2522931026760489, val_acc: 0.9382812492549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 7: train_loss: 0.47393061860561775, train_acc: 0.9622550019735022, val_loss: 0.2109137994411867, val_acc: 0.943359375
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 8: train_loss: 0.43461322551989423, train_acc: 0.9654246630547921, val_loss: 0.21656581640127115, val_acc: 0.955078125
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 9: train_loss: 0.401415628678802, train_acc: 0.9720727848101266, val_loss: 0.1979055069386959, val_acc: 0.9519531242549419
+
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+0.30378511315211654 0.9343749992549419
+freeze first 1.0 layers
+38
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=10.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 0: train_loss: 1.9819172119792503, train_acc: 0.5108181911178782, val_loss: 0.49597007408738136, val_acc: 0.8683593757450581
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 1: train_loss: 1.2660603449927477, train_acc: 0.8445360349703439, val_loss: 0.34258997067809105, val_acc: 0.9031249992549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 2: train_loss: 0.9572420803272018, train_acc: 0.9012556145462809, val_loss: 0.25766645302064717, val_acc: 0.9214843772351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 3: train_loss: 0.7814905447684982, train_acc: 0.92531135142604, val_loss: 0.2333546602167189, val_acc: 0.9296875
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 4: train_loss: 0.6673572656502829, train_acc: 0.9393196202531645, val_loss: 0.24541905289515853, val_acc: 0.9402343742549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 5: train_loss: 0.5833877159162465, train_acc: 0.9497575539576857, val_loss: 0.27548253210261464, val_acc: 0.94140625
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 6: train_loss: 0.5194038856992452, train_acc: 0.9594145569620253, val_loss: 0.1713733828801196, val_acc: 0.94921875
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 7: train_loss: 0.4717658894650654, train_acc: 0.9619410982614831, val_loss: 0.19758819244452752, val_acc: 0.9488281272351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 8: train_loss: 0.4323284086277486, train_acc: 0.9643910779228694, val_loss: 0.3083714396634605, val_acc: 0.9304687492549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 9: train_loss: 0.40207703843824805, train_acc: 0.9648708655864378, val_loss: 0.27007417497225106, val_acc: 0.9382812492549419
+
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+0.4192412381526083 0.9285156242549419
+freeze first 2.0 layers
+38
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=10.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 0: train_loss: 2.358375372086899, train_acc: 0.42901439364952376, val_loss: 0.5425092168152332, val_acc: 0.8328124992549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 1: train_loss: 1.507824150670933, train_acc: 0.8159759083880654, val_loss: 0.368521548807621, val_acc: 0.8949218764901161
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 2: train_loss: 1.1323228022437306, train_acc: 0.8875714576697048, val_loss: 0.27922575804404914, val_acc: 0.916015625
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 3: train_loss: 0.9197774735279381, train_acc: 0.9189031235779388, val_loss: 0.23092340846778825, val_acc: 0.9375
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 4: train_loss: 0.7741315647627263, train_acc: 0.9442195792741414, val_loss: 0.23945014411583543, val_acc: 0.9375
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 5: train_loss: 0.6737168526153162, train_acc: 0.9511790526064137, val_loss: 0.22400560381356627, val_acc: 0.931640625
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 6: train_loss: 0.5988302353413346, train_acc: 0.957908840269982, val_loss: 0.1852662110395613, val_acc: 0.958984375
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 7: train_loss: 0.5442229787032915, train_acc: 0.9534810126582278, val_loss: 0.23987149534514174, val_acc: 0.9460937492549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 8: train_loss: 0.4938250397481011, train_acc: 0.9734151693839062, val_loss: 0.32480942393885925, val_acc: 0.935546875
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 9: train_loss: 0.45541844957353417, train_acc: 0.9697708247583123, val_loss: 0.2841611378826201, val_acc: 0.931640625
+
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+0.39264982962049544 0.9234375022351742
+freeze first 3.0 layers
+38
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=10.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 0: train_loss: 2.765437590019612, train_acc: 0.3355655368370346, val_loss: 0.8192458674311638, val_acc: 0.7750000022351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 1: train_loss: 1.7827529572421992, train_acc: 0.7771207634406754, val_loss: 0.43037754483520985, val_acc: 0.89453125
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 2: train_loss: 1.3394063208362221, train_acc: 0.871271437331091, val_loss: 0.35377830045763403, val_acc: 0.9000000022351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 3: train_loss: 1.0856664353238914, train_acc: 0.9064822375019894, val_loss: 0.2377741122036241, val_acc: 0.9207031242549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 4: train_loss: 0.9119628994235226, train_acc: 0.9374132298216035, val_loss: 0.25787959271110594, val_acc: 0.9265624992549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 5: train_loss: 0.7971603662325738, train_acc: 0.9354379337045211, val_loss: 0.2389782855170779, val_acc: 0.93359375
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 6: train_loss: 0.7081418937629603, train_acc: 0.9487341772151898, val_loss: 0.2906810908461921, val_acc: 0.92578125
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 7: train_loss: 0.6383684556601905, train_acc: 0.9567170272899579, val_loss: 0.24009065190330148, val_acc: 0.9363281242549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 8: train_loss: 0.5788938907132276, train_acc: 0.9690613514260401, val_loss: 0.2610444420570275, val_acc: 0.9375
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 9: train_loss: 0.5346238832910769, train_acc: 0.9622575539576856, val_loss: 0.2987485513149295, val_acc: 0.9402343742549419
+
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+0.4095981218520137 0.9167968742549419
+freeze first 4.0 layers
+38
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=10.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 0: train_loss: 1.8075724819038488, train_acc: 0.553070130529283, val_loss: 0.41088967584073544, val_acc: 0.869140625
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 1: train_loss: 1.1646495372858605, train_acc: 0.8540322579915011, val_loss: 0.2706818310543895, val_acc: 0.9156250022351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 2: train_loss: 0.8832271852825261, train_acc: 0.9084626377383365, val_loss: 0.24346196424448863, val_acc: 0.9425781257450581
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 3: train_loss: 0.7174143958194299, train_acc: 0.9366271947003618, val_loss: 0.2581953865883406, val_acc: 0.9312500022351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 4: train_loss: 0.6113296695032358, train_acc: 0.9462816455696202, val_loss: 0.25830394797958434, val_acc: 0.9332031272351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 5: train_loss: 0.5379509926826903, train_acc: 0.9496835443037974, val_loss: 0.21960023567953613, val_acc: 0.951171875
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 6: train_loss: 0.4771035900377587, train_acc: 0.9655828909028934, val_loss: 0.22640094099915586, val_acc: 0.953125
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 7: train_loss: 0.43439906992153055, train_acc: 0.959723356403882, val_loss: 0.34750852826982737, val_acc: 0.9156250022351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 8: train_loss: 0.3966827849721363, train_acc: 0.9719911187509948, val_loss: 0.2084664433496073, val_acc: 0.9558593742549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 9: train_loss: 0.3690857321346293, train_acc: 0.966613924050633, val_loss: 0.22818569905939512, val_acc: 0.9578124992549419
+
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+0.42575199571365374 0.9382812492549419
+freeze first 5.0 layers
+38
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=10.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 0: train_loss: 3.175376798080493, train_acc: 0.24664914245846906, val_loss: 1.0381772983819246, val_acc: 0.6980468742549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 1: train_loss: 2.0342388830984697, train_acc: 0.7475372601159012, val_loss: 0.37526928540319204, val_acc: 0.8894531242549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 2: train_loss: 1.514104612970151, train_acc: 0.8618568803690657, val_loss: 0.30907966080121696, val_acc: 0.9031249992549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 3: train_loss: 1.2150730938768557, train_acc: 0.9070334829861605, val_loss: 0.28041447373107076, val_acc: 0.9234375022351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 4: train_loss: 1.0180769223106814, train_acc: 0.9311683339408682, val_loss: 0.3097536191344261, val_acc: 0.9148437492549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 5: train_loss: 0.880792080660504, train_acc: 0.9442986931981919, val_loss: 0.32176455197623, val_acc: 0.91015625
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 6: train_loss: 0.77764776508403, train_acc: 0.9533202326750454, val_loss: 0.4251832775771618, val_acc: 0.9156250022351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 7: train_loss: 0.6987010126600419, train_acc: 0.9564031235779388, val_loss: 0.25755860235585715, val_acc: 0.943359375
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 8: train_loss: 0.6346404680296021, train_acc: 0.9651873212826403, val_loss: 0.2531220109158312, val_acc: 0.95703125
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 9: train_loss: 0.5812721244344942, train_acc: 0.9717537769788428, val_loss: 0.27390111470595, val_acc: 0.9402343742549419
+
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+0.30007928700069897 0.943359375
+freeze first 6.0 layers
+38
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=10.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 0: train_loss: 1.7509832530836515, train_acc: 0.5687423437456541, val_loss: 0.44092094464576803, val_acc: 0.869140625
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 1: train_loss: 1.1382114846589444, train_acc: 0.8506227031538758, val_loss: 0.3040803315816447, val_acc: 0.9148437492549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 2: train_loss: 0.8591783414032892, train_acc: 0.9144727438311033, val_loss: 0.3311228135135025, val_acc: 0.9214843772351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 3: train_loss: 0.7076390117577784, train_acc: 0.9286392405063291, val_loss: 0.19529042748035863, val_acc: 0.94921875
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 4: train_loss: 0.6011812586245375, train_acc: 0.9489613107488125, val_loss: 0.2565009323298, val_acc: 0.9296875
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 5: train_loss: 0.5263300739380999, train_acc: 0.9564822375019895, val_loss: 0.19091734779067338, val_acc: 0.94921875
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 6: train_loss: 0.4683440678923477, train_acc: 0.9652689873417721, val_loss: 0.2820367545209592, val_acc: 0.923828125
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 7: train_loss: 0.42494707049339975, train_acc: 0.9647049816348885, val_loss: 0.2923292559626134, val_acc: 0.9226562492549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 8: train_loss: 0.38880704050865156, train_acc: 0.9719094526918629, val_loss: 0.23391838939278387, val_acc: 0.9363281242549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 9: train_loss: 0.36020902346934586, train_acc: 0.9723815842519833, val_loss: 0.36782055371440947, val_acc: 0.9128906242549419
+
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+0.48177631420549005 0.9203125014901161
+freeze first 7.0 layers
+38
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=10.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 0: train_loss: 1.7785495701847198, train_acc: 0.5617726621748526, val_loss: 0.40034177526831627, val_acc: 0.8722656257450581
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 1: train_loss: 1.1495458837645718, train_acc: 0.8495176602013503, val_loss: 0.32889260491356254, val_acc: 0.91015625
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 2: train_loss: 0.8685285717358946, train_acc: 0.9089220089248464, val_loss: 0.22507355257403105, val_acc: 0.943359375
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 3: train_loss: 0.7055926560998976, train_acc: 0.9379695792741414, val_loss: 0.2463008442427963, val_acc: 0.9382812492549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 4: train_loss: 0.5973156007061583, train_acc: 0.9530037769788429, val_loss: 0.2962840315885842, val_acc: 0.9117187522351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 5: train_loss: 0.5259687960216135, train_acc: 0.9518170681180833, val_loss: 0.21997011580970138, val_acc: 0.943359375
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 6: train_loss: 0.468040419312802, train_acc: 0.9634468149535264, val_loss: 0.29102526491624303, val_acc: 0.9097656272351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 7: train_loss: 0.4244533685447878, train_acc: 0.9661366883712479, val_loss: 0.2405116917216219, val_acc: 0.9382812492549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 8: train_loss: 0.3882880824948458, train_acc: 0.970949877364726, val_loss: 0.20128983676841017, val_acc: 0.9499999992549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 9: train_loss: 0.35845843149669604, train_acc: 0.9759493670886076, val_loss: 0.41014616773463786, val_acc: 0.9207031242549419
+
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+0.3670085958437994 0.9128906242549419
+freeze first 8.0 layers
+38
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=10.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 0: train_loss: 1.7691108647403837, train_acc: 0.5666751734818084, val_loss: 0.5185012039728463, val_acc: 0.8406249992549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 1: train_loss: 1.1306739111112643, train_acc: 0.8608360554598555, val_loss: 0.27986010699532926, val_acc: 0.9156250022351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 2: train_loss: 0.8538567951228077, train_acc: 0.9129619231706934, val_loss: 0.2761893442366272, val_acc: 0.923828125
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 3: train_loss: 0.6977668801019016, train_acc: 0.9333069620253165, val_loss: 0.27483227208722383, val_acc: 0.9140625
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 4: train_loss: 0.5883841944931524, train_acc: 0.9556962025316456, val_loss: 0.2924218295374885, val_acc: 0.9187499992549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 5: train_loss: 0.5182089727839557, train_acc: 0.9525265412994578, val_loss: 0.23505613855377305, val_acc: 0.935546875
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 6: train_loss: 0.46228209378325785, train_acc: 0.9621809921687162, val_loss: 0.21143763657892123, val_acc: 0.9558593742549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 7: train_loss: 0.4181832892505071, train_acc: 0.9674816250801086, val_loss: 0.20668396835390013, val_acc: 0.9539062492549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 8: train_loss: 0.38371888875477, train_acc: 0.9711183134513566, val_loss: 0.30979442404350266, val_acc: 0.939453125
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 9: train_loss: 0.35521572799279366, train_acc: 0.9734126172488249, val_loss: 0.33922431436076295, val_acc: 0.9460937492549419
+
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+0.3905420645605773 0.9207031242549419
+freeze first 9.0 layers
+38
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=10.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 0: train_loss: 1.6456515645301795, train_acc: 0.5950030624111996, val_loss: 0.4284996623173356, val_acc: 0.8746093772351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 1: train_loss: 1.049886346664987, train_acc: 0.8772100856032553, val_loss: 0.2842505336739123, val_acc: 0.9128906242549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 2: train_loss: 0.7861424339919466, train_acc: 0.9287872601159012, val_loss: 0.2867145675700158, val_acc: 0.927734375
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 3: train_loss: 0.6380861881035793, train_acc: 0.9423259493670886, val_loss: 0.27071964857168496, val_acc: 0.92578125
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 4: train_loss: 0.545230260487363, train_acc: 0.9492037564893312, val_loss: 0.272219134029001, val_acc: 0.9343749992549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 5: train_loss: 0.47355619992138354, train_acc: 0.9657411187509947, val_loss: 0.180099747114582, val_acc: 0.962890625
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 6: train_loss: 0.4236896947967681, train_acc: 0.9636790526064136, val_loss: 0.3498390221648151, val_acc: 0.916015625
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 7: train_loss: 0.38466916484865105, train_acc: 0.9677164147171793, val_loss: 0.3033110408578068, val_acc: 0.9480468742549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 8: train_loss: 0.3522787495680713, train_acc: 0.9751556757130201, val_loss: 0.28161725618701894, val_acc: 0.9421874992549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 9: train_loss: 0.3261257008116552, train_acc: 0.9761790526064137, val_loss: 0.32904809244791977, val_acc: 0.9296875
+
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+0.39021612447686493 0.9050781242549419
+freeze first 10.0 layers
+38
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=10.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 0: train_loss: 1.5112802785031403, train_acc: 0.6194492649428452, val_loss: 0.43339967727661133, val_acc: 0.8765625022351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 1: train_loss: 0.9640134445757051, train_acc: 0.882668946362749, val_loss: 0.2812085764016956, val_acc: 0.923828125
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 2: train_loss: 0.7227614956487458, train_acc: 0.9303695385969137, val_loss: 0.29431709402706474, val_acc: 0.921875
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 3: train_loss: 0.5862813224358767, train_acc: 0.9474683544303798, val_loss: 0.26937263511354104, val_acc: 0.939453125
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 4: train_loss: 0.48876516725331587, train_acc: 0.9711948753912237, val_loss: 0.2030862456012983, val_acc: 0.955078125
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 5: train_loss: 0.4257157275067369, train_acc: 0.9666904858396023, val_loss: 0.30092387431068346, val_acc: 0.931640625
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 6: train_loss: 0.3789526502077197, train_acc: 0.9731012658227848, val_loss: 0.29387243784731254, val_acc: 0.9343749992549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 7: train_loss: 0.34606312471084577, train_acc: 0.9695385871054251, val_loss: 0.30158738150203135, val_acc: 0.94140625
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 8: train_loss: 0.3166348169922224, train_acc: 0.975870253164557, val_loss: 0.22077633878507186, val_acc: 0.94921875
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 9: train_loss: 0.29267478556059456, train_acc: 0.980379746835443, val_loss: 0.27867307953420095, val_acc: 0.9375
+
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+0.4092370982034481 0.935546875
+freeze first 11.0 layers
+38
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=10.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 0: train_loss: 1.629214801441265, train_acc: 0.5938112494311755, val_loss: 0.32029969128780067, val_acc: 0.8960937522351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 1: train_loss: 1.019430362753853, train_acc: 0.8806936503965643, val_loss: 0.2534536187304184, val_acc: 0.9207031242549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 2: train_loss: 0.7555798524511262, train_acc: 0.9314031235779388, val_loss: 0.27939664787845686, val_acc: 0.9285156242549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 3: train_loss: 0.605419054725561, train_acc: 0.9544278276117543, val_loss: 0.2499069485347718, val_acc: 0.9382812492549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 4: train_loss: 0.5048883821994739, train_acc: 0.9701714984978301, val_loss: 0.23941574202035554, val_acc: 0.9441406242549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 5: train_loss: 0.4385916473515153, train_acc: 0.9692246835443038, val_loss: 0.2836493088398129, val_acc: 0.923828125
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 6: train_loss: 0.3861665162313216, train_acc: 0.9784810126582278, val_loss: 0.27830185964194243, val_acc: 0.9363281242549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 7: train_loss: 0.34988792689107845, train_acc: 0.9743670886075949, val_loss: 0.30886934489171836, val_acc: 0.9351562522351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 8: train_loss: 0.3196664770346362, train_acc: 0.9795043894007236, val_loss: 0.2627513920306228, val_acc: 0.935546875
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 9: train_loss: 0.2945433543244199, train_acc: 0.9827506124218808, val_loss: 0.2042609104537405, val_acc: 0.9539062492549419
+
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+0.4799306326895021 0.9226562492549419
+freeze first 12.0 layers
+38
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=10.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 0: train_loss: 1.4980918473835232, train_acc: 0.6247422417507896, val_loss: 0.34197971457615495, val_acc: 0.9070312492549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 1: train_loss: 0.9516470045983036, train_acc: 0.8814005715937554, val_loss: 0.25103594246320426, val_acc: 0.9312500022351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 2: train_loss: 0.7020241274384443, train_acc: 0.9389955083026161, val_loss: 0.3052759834099561, val_acc: 0.9167968742549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 3: train_loss: 0.561123225649913, train_acc: 0.9602031440674504, val_loss: 0.22880554874427617, val_acc: 0.9285156242549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 4: train_loss: 0.47048053830072184, train_acc: 0.9686632298216035, val_loss: 0.24874113356054295, val_acc: 0.9410156272351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 5: train_loss: 0.4049343629720161, train_acc: 0.9776082073585897, val_loss: 0.25816648732870817, val_acc: 0.9499999992549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 6: train_loss: 0.3585942681486613, train_acc: 0.9772126377383364, val_loss: 0.3081662393233273, val_acc: 0.939453125
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 7: train_loss: 0.32491603438889627, train_acc: 0.9766613924050633, val_loss: 0.2356357793760253, val_acc: 0.94921875
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 8: train_loss: 0.29468708599400034, train_acc: 0.9856803797468354, val_loss: 0.22679896659974474, val_acc: 0.958984375
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 9: train_loss: 0.271687658600221, train_acc: 0.9821993670886076, val_loss: 0.3573765807086602, val_acc: 0.9175781272351742
+
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+0.5577926092082635 0.9097656272351742
+freeze first 13.0 layers
+38
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=10.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 0: train_loss: 1.487412713486937, train_acc: 0.6222182522846174, val_loss: 0.40980976913124323, val_acc: 0.888671875
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 1: train_loss: 0.9397795408492602, train_acc: 0.8882860349703439, val_loss: 0.228204854298383, val_acc: 0.931640625
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 2: train_loss: 0.6901615271938155, train_acc: 0.9436657818057869, val_loss: 0.2895461114385398, val_acc: 0.921875
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 3: train_loss: 0.5467204772899682, train_acc: 0.9636790526064136, val_loss: 0.25415170611813664, val_acc: 0.9375
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 4: train_loss: 0.45219638897601183, train_acc: 0.9780854430379747, val_loss: 0.23652904259506613, val_acc: 0.9343749992549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 5: train_loss: 0.38809416378946, train_acc: 0.9807702121855337, val_loss: 0.3144849569071084, val_acc: 0.9230468757450581
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 6: train_loss: 0.3415290182698783, train_acc: 0.9832252959661846, val_loss: 0.3282460220361827, val_acc: 0.92578125
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 7: train_loss: 0.30543223809626496, train_acc: 0.9840955491307416, val_loss: 0.27942394057754427, val_acc: 0.94140625
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 8: train_loss: 0.2769705214854629, train_acc: 0.9863924050632912, val_loss: 0.3143893796514021, val_acc: 0.9375
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 9: train_loss: 0.2542456006033761, train_acc: 0.9852056962025316, val_loss: 0.3557395696079766, val_acc: 0.9214843772351742
+
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+0.4194838953553699 0.9167968742549419
+freeze first 14.0 layers
+38
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=10.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 0: train_loss: 1.520032886425151, train_acc: 0.6162872601159012, val_loss: 0.30378765147179365, val_acc: 0.9070312492549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 1: train_loss: 0.9572255878273068, train_acc: 0.8871018782446656, val_loss: 0.24592769949231297, val_acc: 0.931640625
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 2: train_loss: 0.6951075738626002, train_acc: 0.9481778276117542, val_loss: 0.22724105991073884, val_acc: 0.94140625
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 3: train_loss: 0.5476732617930828, train_acc: 0.9696177010294758, val_loss: 0.25380896133719943, val_acc: 0.93359375
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 4: train_loss: 0.45121980756827745, train_acc: 0.9804588607594936, val_loss: 0.23326023475965485, val_acc: 0.9375
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 5: train_loss: 0.3852361554605101, train_acc: 0.9839347691475591, val_loss: 0.2307409184286371, val_acc: 0.94140625
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 6: train_loss: 0.3377026485010795, train_acc: 0.9838607594936709, val_loss: 0.29310990924568614, val_acc: 0.93359375
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 7: train_loss: 0.30006002415092425, train_acc: 0.9907385666159135, val_loss: 0.32310534265707247, val_acc: 0.9296875
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 8: train_loss: 0.27181513063414675, train_acc: 0.9874183339408681, val_loss: 0.226001803894178, val_acc: 0.9499999992549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 9: train_loss: 0.24847149279982786, train_acc: 0.9873417721518988, val_loss: 0.2510097609629156, val_acc: 0.94921875
+
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+0.3727432518498972 0.9402343742549419
+freeze first 15.0 layers
+38
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=10.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 0: train_loss: 1.6033138742929773, train_acc: 0.5947657206390478, val_loss: 0.4067148854956031, val_acc: 0.8777343742549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 1: train_loss: 1.008606355476983, train_acc: 0.8775188851960097, val_loss: 0.2689343655947596, val_acc: 0.91015625
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 2: train_loss: 0.7354903545906524, train_acc: 0.9432702121855338, val_loss: 0.24426389730069786, val_acc: 0.9253906272351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 3: train_loss: 0.5737601720577672, train_acc: 0.9740506329113924, val_loss: 0.26497478142846376, val_acc: 0.931640625
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 4: train_loss: 0.4711856157142858, train_acc: 0.9826714984978302, val_loss: 0.23502934229327366, val_acc: 0.93359375
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 5: train_loss: 0.39989236150755264, train_acc: 0.9881329113924051, val_loss: 0.22421632055193186, val_acc: 0.939453125
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 6: train_loss: 0.3476092056999452, train_acc: 0.9920094936708861, val_loss: 0.22879098797420738, val_acc: 0.9363281242549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 7: train_loss: 0.3081732390424874, train_acc: 0.9928006329113924, val_loss: 0.25441714690532535, val_acc: 0.9324218742549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 8: train_loss: 0.27787616512669894, train_acc: 0.9912183544303798, val_loss: 0.27389235235750675, val_acc: 0.9382812492549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 9: train_loss: 0.25322359204325456, train_acc: 0.9920094936708861, val_loss: 0.2730019800364971, val_acc: 0.9343749992549419
+
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+0.4296893380815163 0.9265624992549419
+freeze first 16.0 layers
+38
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=10.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 0: train_loss: 1.7112143244169935, train_acc: 0.5659657001495362, val_loss: 0.48396842554211617, val_acc: 0.8562499992549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 1: train_loss: 1.1125042418984672, train_acc: 0.8497524499893189, val_loss: 0.3465023539029062, val_acc: 0.8882812522351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 2: train_loss: 0.822480208414139, train_acc: 0.9265822784810127, val_loss: 0.31033137277700007, val_acc: 0.916015625
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 3: train_loss: 0.6543054252114335, train_acc: 0.9518987341772152, val_loss: 0.3313802380580455, val_acc: 0.912109375
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 4: train_loss: 0.5437395223351549, train_acc: 0.9696151488943945, val_loss: 0.3326717652962543, val_acc: 0.9140625
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 5: train_loss: 0.46735613311342267, train_acc: 0.9759468149535263, val_loss: 0.30136251682415605, val_acc: 0.9140625
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 6: train_loss: 0.4128996778511111, train_acc: 0.974522764320615, val_loss: 0.34126969729550183, val_acc: 0.91015625
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 7: train_loss: 0.3706221476271476, train_acc: 0.9767379541940326, val_loss: 0.36790122522506863, val_acc: 0.9140625
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 8: train_loss: 0.33698148449858145, train_acc: 0.9808544303797468, val_loss: 0.31292563024908304, val_acc: 0.92578125
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 9: train_loss: 0.3096154137094037, train_acc: 0.98125, val_loss: 0.3192359935710556, val_acc: 0.916015625
+
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+0.5609713758458383 0.900390625
+freeze first 17.0 layers
+38
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=10.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 0: train_loss: 1.8883534939983222, train_acc: 0.555913127826739, val_loss: 0.6208323203027248, val_acc: 0.8382812514901161
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 1: train_loss: 1.321200995958304, train_acc: 0.789066965972321, val_loss: 0.45015774155035615, val_acc: 0.8640624992549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 2: train_loss: 1.0595905393865037, train_acc: 0.8467435687403135, val_loss: 0.37644959706813097, val_acc: 0.8953124992549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 3: train_loss: 0.8978762256853943, train_acc: 0.8809105756916578, val_loss: 0.33917664596810937, val_acc: 0.9031249992549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 4: train_loss: 0.7858822161902356, train_acc: 0.9026898734177216, val_loss: 0.30511663807556033, val_acc: 0.9109374992549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 5: train_loss: 0.7014045972109847, train_acc: 0.9166853817203376, val_loss: 0.33417920442298055, val_acc: 0.9011718742549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 6: train_loss: 0.6335057995512839, train_acc: 0.9336183134513565, val_loss: 0.29747587465681136, val_acc: 0.919921875
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 7: train_loss: 0.5789624808792355, train_acc: 0.9400239893152744, val_loss: 0.34977486496791244, val_acc: 0.8921875022351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 8: train_loss: 0.5344006354285277, train_acc: 0.9470727848101266, val_loss: 0.3072434503119439, val_acc: 0.9070312492549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 9: train_loss: 0.4971664287489427, train_acc: 0.9503904653500908, val_loss: 0.27446186915040016, val_acc: 0.9246093742549419
+
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+0.32793008256703615 0.9011718742549419
+freeze first 18.0 layers
+38
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=10.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 0: train_loss: 2.8782162023496025, train_acc: 0.3977567373951779, val_loss: 1.7855706885457039, val_acc: 0.7007812522351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 1: train_loss: 2.211189701587339, train_acc: 0.6711004491093793, val_loss: 1.229173194617033, val_acc: 0.7800781242549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 2: train_loss: 1.8662482785273202, train_acc: 0.737474479252779, val_loss: 0.9961483627557755, val_acc: 0.7828125022351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 3: train_loss: 1.6492217212538176, train_acc: 0.7670018374165403, val_loss: 0.8633632063865662, val_acc: 0.8113281242549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 4: train_loss: 1.495488875968547, train_acc: 0.7882069210462932, val_loss: 0.7732860371470451, val_acc: 0.8367187492549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 5: train_loss: 1.3788709269545754, train_acc: 0.8062346874913083, val_loss: 0.7061696089804173, val_acc: 0.8394531272351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 6: train_loss: 1.2865166135226624, train_acc: 0.8163587177856059, val_loss: 0.6579588130116463, val_acc: 0.8542968742549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 7: train_loss: 1.2115599332165115, train_acc: 0.8251352592359615, val_loss: 0.6317075677216053, val_acc: 0.8464843742549419
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 8: train_loss: 1.147867233353325, train_acc: 0.8381175988837134, val_loss: 0.5937250405550003, val_acc: 0.8570312522351742
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=395.0), HTML(value='')))
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+epoch: 9: train_loss: 1.0937410806553274, train_acc: 0.8429307880280893, val_loss: 0.5737101286649704, val_acc: 0.8679687492549419
+
+HBox(children=(HTML(value=''), FloatProgress(value=0.0, max=16.0), HTML(value='')))
+0.5914418548345566 0.8433593772351742
